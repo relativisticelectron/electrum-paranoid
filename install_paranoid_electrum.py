@@ -79,8 +79,8 @@ binary, signature = download_electrum()
 verified = verify(signature)
 if verified:
 	installed = install(binary)
-if installed:
-	modify_electrum()
+	if installed:
+		modify_electrum()
 
 #%%
 
