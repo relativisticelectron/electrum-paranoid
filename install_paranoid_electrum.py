@@ -10,9 +10,11 @@ def run(cmd):
 	res = subprocess.run(
 		shlex.split(cmd),
 		stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
-	print(res)
+	print(res.stderr)
+	print(res.stdout)
 	return res
 
+#%%
 
 def import_pgp_key():
 	run('wget https://raw.githubusercontent.com/spesmilo/electrum/master/pubkeys/ThomasV.asc')
