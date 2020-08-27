@@ -6,7 +6,7 @@ The script
 *  Downloads the newest version
 *  Verifies the signature
 *  Installs it into /usr/local/bin/electrum  
-   * uninstall with: sudo pip uninstall electrum
+   * uninstall with: `sudo pip uninstall electrum`
 *  Mofifies /usr/local/bin/electrum  to 
    * disable autoconnect permanently
    * enable oneserver permanently
