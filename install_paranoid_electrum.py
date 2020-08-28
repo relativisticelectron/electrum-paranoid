@@ -72,6 +72,8 @@ def modify_electrum(installed_file='/usr/local/bin/electrum'):
 	y = input('Overwrite electrum to disable autoconnect? (y/n)')
 	if y == 'y':
 		run('pkexec mv {} {}'.format(temp_file, installed_file))
+		run('pkexec chown root {}'.format(installed_file))
+		run('pkexec chmod +x {}'.format(installed_file))
 
 
 #%%
